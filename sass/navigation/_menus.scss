@@ -1,0 +1,200 @@
+/*=header*/
+.image_logo {
+    max-height: 70px;
+    padding: 4px;
+}
+
+.main-navigation {
+    position: fixed;
+    z-index: 999;
+    text-decoration: none;
+    font-family: $font_nav;
+    background-color: $color_header_1;
+    width: 100%;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 0 12px 2px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 0 12px 2px rgba(0, 0, 0, .4);
+}
+
+.main-navigation ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    float: right;
+}
+
+.main-navigation ul:before,.main-navigation ul:after {
+    content:"";
+    display:table;
+}
+
+.main-navigation ul:after {
+    clear:both;
+}
+
+.main-navigation ul > li {
+    float:left;
+    position:relative;
+    text-align: center;
+    min-width: 140px;
+}
+
+.main-navigation a {
+    height: 70px;   /* this must agree to two classes below*/
+    font-size: 18px;
+    display:block;
+    padding: 22px 12px;
+    line-height:1.2em;
+    color:$logo-2;
+    text-decoration: none;
+}
+
+.main-navigation a:hover {
+    color: $white;
+    text-decoration:none;
+    background-color: $logo-2;
+     -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+}
+
+.main-navigation li ul {
+    background-color: $color_header_1;
+}
+
+.main-navigation li ul li {
+    width:220px;
+}
+
+.main-navigation li ul a {
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+.main-navigation li ul a:hover {
+    background: $logo-2;
+}
+
+.main-navigation li ul {
+    position: absolute;
+    left:0;
+    top:70px;   /* make sure this agrees to "main-navigation a" height*/
+    z-index:1;
+}
+.main-navigation li ul li {
+    overflow:hidden;
+    height:0;
+    -webkit-transition:height 250ms ease-in;
+    -moz-transition:height 250ms ease-in;
+    -o-transition:height 250ms ease-in;
+    transition:height 250ms ease-in;
+}
+.main-navigation ul > li:hover ul li {
+    height:36px;
+}
+
+.content-area {
+    margin-top: 70px;   /* make sure this agrees to "main-navigation a" height*/
+}
+
+@media screen and (max-width: 700px) {
+
+    .main-navigation {
+        display: none;
+    }
+    .content-area {
+        margin-top: 54px;
+    }
+}
+
+
+/*=footer*/
+.footer {
+    width: 100%;
+    margin: 0;
+    background-color: $gray-6;
+    border-top: 4px solid $logo-2;
+    color: $color_text_2;
+    p {
+        color: $gray-3;
+        font-size: 14px;
+        padding: 0;
+        margin: .2em;
+    }
+    a {
+        color: $gray-3;
+        display: block;
+        
+        &:hover {
+             color: $gray-1;
+            -webkit-transition: all 250ms ease-in;
+            -moz-transition: all 250ms ease-in;
+            -o-transition: all 250ms ease-in;
+            transition: all 250ms ease-in;
+        }
+    }
+    a p {
+        text-decoration: none;
+        &:hover {
+            color: $gray-1;
+            -webkit-transition: all 250ms ease-in;
+            -moz-transition: all 250ms ease-in;
+            -o-transition: all 250ms ease-in;
+            transition: all 250ms ease-in;
+        }
+    }
+    .fa-stack-2x {
+        color: $gray-4;
+    }
+    .fa-stack-1x {
+        color: $color_text_2;
+    }
+    .fa-facebook:hover {
+            color: #3b5998;
+            -webkit-transition: all 250ms ease-in;
+            -moz-transition: all 250ms ease-in;
+            -o-transition: all 250ms ease-in;
+            transition: all 250ms ease-in;
+        }
+    .fa-twitter:hover {
+            color: #00aced;
+            -webkit-transition: all 250ms ease-in;
+            -moz-transition: all 250ms ease-in;
+            -o-transition: all 250ms ease-in;
+            transition: all 250ms ease-in;
+        }
+    .fa-linkedin:hover {
+            color: #007bb6;
+            -webkit-transition: all 250ms ease-in;
+            -moz-transition: all 250ms ease-in;
+            -o-transition: all 250ms ease-in;
+            transition: all 250ms ease-in;
+        }
+    .fa-youtube:hover {
+            color: #bb0000;
+            -webkit-transition: all 250ms ease-in;
+            -moz-transition: all 250ms ease-in;
+            -o-transition: all 250ms ease-in;
+            transition: all 250ms ease-in;
+        }
+    hr {
+        margin: .8em 0 .4em 0;
+        background-color: $gray-2;
+    }
+}
+
+.footer_top {
+	padding: 2em 0 1em 0;
+    display: block;
+}
+
+.footer_bottom {
+    width: 100%;
+    padding: .5em 0;
+    margin: 0;
+    background-color: $gray-4;
+    p {
+        color: $color_text_1;
+    }
+}
