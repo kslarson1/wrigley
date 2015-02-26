@@ -30,15 +30,16 @@
 
 <div class="container">
 	<div class="row">
-	   <div class="col-xs-4">
+	   <div class="col-xs-2">
 		  <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" class="image_logo">
 	   </div>
-	   <div class="col-xs-8">
+	   <div class="col-xs-10">
             <ul id="menu">
             	<li><a href="#landing">Home</a></li>
 	            <li><a href="#menu">Menu</a></li>
 	            <li><a href="#about">About</a></li>
 	            <li><a href="#contact">Contact</a></li>
+	            <li><a href="wrigley/events">Events</a></li>
         	</ul>
         </div>
     </div>
