@@ -4,7 +4,7 @@
 
 hr {
 	height: 1px;
-	background-color: $logo-1;
+	background-color: $gray-3;
 	width: 90%;
 }
 
@@ -111,4 +111,10 @@ hr {
 }
 
 /*blog*/
+.event_post {
+	margin: 6em 0;
+}
 
+#blog_roll {
+	margin: 6em 0;
+}

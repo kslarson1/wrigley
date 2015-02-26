@@ -35,7 +35,6 @@ get_header(); ?>
 			<div class="col-xs-12 col-sm-6">
 				<h2 class="center"><?php the_field('about_header'); ?></h2>
 				<p><?php the_field('about_text'); ?></p>
-				<button class="button_flat">Meet Us</button>
 			</div>
 			<div class="col-xs-12 col-sm-6">
 				<img src="<?php the_field('about_image'); ?>" class="image_full">

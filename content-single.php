@@ -8,9 +8,6 @@
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-			<?php wrigley_posted_on(); ?>
-		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -23,7 +20,4 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php wrigley_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

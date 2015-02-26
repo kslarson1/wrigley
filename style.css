@@ -1325,7 +1325,7 @@ h6 {
 
 hr {
   height: 1px;
-  background-color: #274167;
+  background-color: #bdbdbd;
   width: 90%; }
 
 .break {
@@ -1413,6 +1413,12 @@ hr {
   width: 100%; }
 
 /*blog*/
+.event_post {
+  margin: 6em 0; }
+
+#blog_roll {
+  margin: 6em 0; }
+
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
@@ -1639,6 +1645,11 @@ a {
   box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.4); }
+  .main-navigation .logo_a {
+    margin: 0;
+    padding: 0; }
+    .main-navigation .logo_a:hover {
+      background-color: transparent; }
 
 .main-navigation ul {
   list-style: none;

@@ -12,14 +12,25 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'content', 'single' ); ?>
-<h1>karlkarlkarl</h1>
-			<?php the_post_navigation(); ?>
+<div class="event_post">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8">
+				<?php get_template_part( 'content', 'single' ); ?>
+
+				<?php the_post_navigation(); ?>
+			</div>
+			<div class="col-xs-12 col-xs-4">
+				<?php get_sidebar(); ?>
+			</div>
+		</div>
+	</div>
+</div>
 
 		<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
