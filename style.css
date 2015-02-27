@@ -1424,6 +1424,12 @@ hr {
   .menu_list b {
     margin: 0 .5em 0 0; }
 
+.beer_p {
+  display: inline-block;
+  font-size: .8em;
+  margin: 0;
+  padding: 0; }
+
 #about {
   padding: 6em 0;
   background-color: #E9E6E0; }

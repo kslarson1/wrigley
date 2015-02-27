@@ -21,7 +21,7 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-xs-12 center">
 				<img src="<?php the_field('home_logo'); ?>" class="home_logo">
-				<h1><?php the_field('home_header'); ?></h1>
+					<h1><?php the_field('home_header'); ?></h1>
 				<a href="#about"><i class="fa fa-angle-double-down fa-4x"></i></a>
 			</div>
 		</div>
@@ -107,6 +107,52 @@ endif; ?>
 
 			</div>	<!-- end of col -->
 		</div>	<!-- end of row -->
+
+
+<br>
+<br>
+<p class="menu_class">beers</p>
+<hr class="left_small">
+
+		<div class="row">
+
+<!-- begin beer menu repeater -->
+<?php
+
+// check if the repeater field has rows of data
+
+$i = 1;
+
+// open first column
+echo '<div class="col-xs-12 col-sm-6">';
+
+if( have_rows('beer_menu') ):
+
+ 	// <!-- // // loop through the rows of data -->
+    while ( have_rows('beer_menu') ) : the_row(); ?>
+
+       <!-- show each repeater item -->
+
+        <p class="beer_p"><b><?php the_sub_field('beer'); ?></b></p>  <p class="beer_p"><?php the_sub_field('beer_desc'); ?></p>
+		
+<!-- // if multiple of 3 close div and open a new div -->
+     <?php if($i % 1 == 0) {echo '</div><div class="col-xs-12 col-sm-6">'; }
+
+     $i++;
+		//make sure open div is closed
+		
+    endwhile;
+
+else :
+
+    // no rows found
+
+endif;
+echo '</div>';
+?>
+<!-- end of beer menu repeater -->
+
+		</div>  <!-- end of row -->
 	</div>	<!-- end of container -->
 </div>  <!-- end of =menu section -->
 
