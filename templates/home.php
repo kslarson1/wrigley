@@ -32,11 +32,11 @@ get_header(); ?>
 <div id="about">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-6">
+			<div class="col-xs-12 col-sm-5">
 				<h2 class="center"><?php the_field('about_header'); ?></h2>
 				<p><?php the_field('about_text'); ?></p>
 			</div>
-			<div class="col-xs-12 col-sm-6">
+			<div class="col-xs-12 col-sm-7">
 				<img src="<?php the_field('about_image'); ?>" class="image_full">
 			</div>
 		</div>
@@ -56,16 +56,21 @@ get_header(); ?>
 
 <div id="menu_main" style="background-image: url(<?php the_field('menu_bg'); ?>);">
 	<div class="container">
-	<div class="row">
-		<div class="col-xs-12 col-sm-8 col-sm-offset-2">
-			<?php the_field('menu_intro'); ?>
-			<br>
-			<br>
-			<br>
-		</div>
-	</div>
 		<div class="row">
-			<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+			<div class="col-xs-12">
+			<div class="row">
+			<div class="col-xs-12 col-sm-2">
+				<h1 class="center ">MENUS</h1>
+			</div>
+			<div class="col-xs-12 col-sm-9 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1">
+				<p class="outlined"><?php the_field('menu_intro'); ?></p>
+			</div>
+			</div>
+			<br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
 
 <!-- START OF FIRST REPEATER -->
 <?php
@@ -74,7 +79,8 @@ get_header(); ?>
 if( have_rows('menu') ):
   // loop through the rows of data
     while ( have_rows('menu') ) : the_row(); ?>
-		<h4><?php the_sub_field('menu_header'); ?></h4>
+		<p class="menu_class"><b><?php the_sub_field('menu_header'); ?></b></p>
+		<hr class="left_small">
 			<ul class="menu_list">
 	        <!-- START OF SECOND REPEATER FOR LIST -->
 	        	<?php
@@ -83,7 +89,7 @@ if( have_rows('menu') ):
 	          <!-- // display a sub field value -->
 
 							<li>
-	              				<p><b><?php the_sub_field('item'); ?></b><?php the_sub_field('description'); ?><?php the_sub_field('price'); ?></p>
+	              				<p><b><?php the_sub_field('item'); ?></b><?php the_sub_field('description'); ?>  <?php the_sub_field('price'); ?></p>
 							</li>
 
 	          			<?php endwhile;
@@ -99,9 +105,9 @@ endif; ?>
 
 <!-- END OF FIRST REPEATER -->
 
-			</div>
-		</div>
-	</div>
+			</div>	<!-- end of col -->
+		</div>	<!-- end of row -->
+	</div>	<!-- end of container -->
 </div>  <!-- end of =menu section -->
 
 
@@ -114,16 +120,38 @@ endif; ?>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12 col-sm-6">
+				<div class="col-xs-12 col-sm-5 col-sm-offset-1">
 					<h3 class="center">Location</h3>
 					<p><?php the_field('about_address_desc'); ?></p>
 					<p class="center"><?php the_field('about_address'); ?></p>
-					<hr>
+
+					<hr class="no_small">
+
 					<h3 class="center">Contact Us</h3>
-					<p class="center"><i class="fa fa-phone"></i><?php the_field('about_phone'); ?></p>
-					<p class="center"><i class="fa fa-envelope-o"></i><?php the_field('about_email'); ?></p>
+					<p class="center small_margin"><i class="fa fa-phone reduce_margin"></i><?php the_field('about_phone'); ?></p>
+					<p class="center small_margin"><i class="fa fa-envelope-o reduce_margin"></i><a href="mailto:kslarson1@gmail.com"><?php the_field('about_email'); ?></a></p>
+					<div class="social_container">
+						<span class="fa-stack fa-lg">
+							<a href="https://www.facebook.com/pages/The-Wrigley-Taproom-and-Brewery/577571682341250" target="_blank">
+	  							<i class="fa fa-circle fa-stack-2x"></i>
+	  							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+							</a>
+						</span>
+						<span class="fa-stack fa-lg">
+							<a href="https://www.linkedin.com/pub/emily-parsons/1b/870/178" target="_blank">
+				  				<i class="fa fa-circle fa-stack-2x"></i>
+				  				<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+							</a>
+						</span>
+						<span class="fa-stack fa-lg">
+							<a href="https://www.linkedin.com/pub/emily-parsons/1b/870/178" target="_blank">
+				  				<i class="fa fa-circle fa-stack-2x"></i>
+				  				<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+							</a>
+						</span>
+					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 center">
+				<div class="col-xs-12 col-sm-5 center">
 					<h3>Hours</h3>
 					<p><i class="fa fa-times"></i><b><?php the_field('hours_intro'); ?></b><i class="fa fa-times"></i></p>
 

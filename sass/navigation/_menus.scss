@@ -115,93 +115,13 @@
     }
 }
 
-
-/*=footer*/
-.footer {
-    width: 100%;
-    margin: 0;
-    background-color: $gray-6;
-    border-top: 4px solid $logo-2;
-    color: $color_text_2;
+/*footer*/
+.site-footer {
+    background-color: $gray-5;
+    font-size: .8em;
+    padding: .3em;
     p {
-        color: $gray-3;
-        font-size: 14px;
-        padding: 0;
-        margin: .2em;
-    }
-    a {
-        color: $gray-3;
-        display: block;
-        
-        &:hover {
-             color: $gray-1;
-            -webkit-transition: all 250ms ease-in;
-            -moz-transition: all 250ms ease-in;
-            -o-transition: all 250ms ease-in;
-            transition: all 250ms ease-in;
-        }
-    }
-    a p {
-        text-decoration: none;
-        &:hover {
-            color: $gray-1;
-            -webkit-transition: all 250ms ease-in;
-            -moz-transition: all 250ms ease-in;
-            -o-transition: all 250ms ease-in;
-            transition: all 250ms ease-in;
-        }
-    }
-    .fa-stack-2x {
-        color: $gray-4;
-    }
-    .fa-stack-1x {
-        color: $color_text_2;
-    }
-    .fa-facebook:hover {
-            color: #3b5998;
-            -webkit-transition: all 250ms ease-in;
-            -moz-transition: all 250ms ease-in;
-            -o-transition: all 250ms ease-in;
-            transition: all 250ms ease-in;
-        }
-    .fa-twitter:hover {
-            color: #00aced;
-            -webkit-transition: all 250ms ease-in;
-            -moz-transition: all 250ms ease-in;
-            -o-transition: all 250ms ease-in;
-            transition: all 250ms ease-in;
-        }
-    .fa-linkedin:hover {
-            color: #007bb6;
-            -webkit-transition: all 250ms ease-in;
-            -moz-transition: all 250ms ease-in;
-            -o-transition: all 250ms ease-in;
-            transition: all 250ms ease-in;
-        }
-    .fa-youtube:hover {
-            color: #bb0000;
-            -webkit-transition: all 250ms ease-in;
-            -moz-transition: all 250ms ease-in;
-            -o-transition: all 250ms ease-in;
-            transition: all 250ms ease-in;
-        }
-    hr {
-        margin: .8em 0 .4em 0;
-        background-color: $gray-2;
-    }
-}
-
-.footer_top {
-	padding: 2em 0 1em 0;
-    display: block;
-}
-
-.footer_bottom {
-    width: 100%;
-    padding: .5em 0;
-    margin: 0;
-    background-color: $gray-4;
-    p {
-        color: $color_text_1;
+        margin: .4em auto;
+        color: $logo-3;
     }
 }

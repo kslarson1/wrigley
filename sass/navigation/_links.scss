@@ -1,13 +1,16 @@
 a {
+	font-family: $font_text;
 	color: $color__link;
-
+	text-decoration: none;
 	&:visited {
 		color: $color__link-visited;
+		text-decoration: none;
 	}
 	&:hover,
 	&:focus,
 	&:active {
 		color: $color__link-hover;
+		text-decoration: none;
 	}
 	&:focus {
 		outline: thin dotted;

@@ -22,13 +22,29 @@ hr {
 	color: $white;
 }
 
+.inline {
+	display: inline-block;
+}
+
+.grit {
+  -webkit-mask-image: url("http://support.nature.org/images/earth/assets/grit.png");
+  mask-image: url("http://support.nature.org/images/earth/assets/grit.png");
+}
+
+.outlined {
+	padding: .3em 1em;
+	font-size: .9em;
+}
+
 .home_logo {
 	margin: 5em auto 4em auto;
 }
 
 .image_full {
 	margin-top: 2em;
-	border: 1em solid $white;
+	box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, .4);
 }
 
 .small_margin {
@@ -52,6 +68,13 @@ hr {
 	}
 }
 
+.no_small {
+	display: none;
+	@media (min-width: 768px) {
+		display: block;
+	}
+}
+
 #landing {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -66,9 +89,20 @@ hr {
 }
 
 #menu_main {
-	padding: 6em 0;
+	padding: 4em 0 6em 0;
 	z-index: 3;
 	background-repeat: auto;
+}
+
+.menu_class {
+	text-transform: uppercase;
+	margin: 1em auto .5em auto;
+}
+
+.left_small {
+	background-color: $gray-3;
+	margin: 0 auto .5em 0;
+	width: 200px;
 }
 
 .menu_list{
@@ -77,6 +111,7 @@ hr {
 	li {
 		list-style: none;
 		margin: .5em 0;
+		font-size: .8em;
 	}
 	p {
 		margin: 0;
@@ -97,7 +132,7 @@ hr {
 	p {
 		font-size: .9em;
 	}
-	i {
+	.reduce_margin {
 		margin: 0 .5em;
 	}
 }
@@ -110,6 +145,41 @@ hr {
 	width: 100%;
 }
 
+/*social media*/
+.social_container {
+	text-align: center;
+	margin-top: .4em;
+}
+
+.fa-stack-2x {
+    color: $logo-3;
+}
+
+.fa-stack-1x {
+    color: $color_text_2;
+}
+.fa-facebook:hover {
+        color: #3b5998;
+        -webkit-transition: all 250ms ease-in;
+        -moz-transition: all 250ms ease-in;
+        -o-transition: all 250ms ease-in;
+        transition: all 250ms ease-in;
+    }
+.fa-twitter:hover {
+        color: #00aced;
+        -webkit-transition: all 250ms ease-in;
+        -moz-transition: all 250ms ease-in;
+        -o-transition: all 250ms ease-in;
+        transition: all 250ms ease-in;
+    }
+.fa-instagram:hover {
+    color: #517fa4;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+}
+
 /*blog*/
 .event_post {
 	margin: 6em 0;
@@ -118,3 +188,4 @@ hr {
 #blog_roll {
 	margin: 6em 0;
 }
+

@@ -31,7 +31,7 @@
 <div class="container">
 	<div class="row">
 	   <div class="col-xs-2">
-		  <a class="logo_a" href="/home"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" class="image_logo"></a>
+		  <a class="logo_a" href="/wrigley"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" class="image_logo"></a>
 	   </div>
 	   <div class="col-xs-10">
             <ul id="menu">
