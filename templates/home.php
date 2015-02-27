@@ -114,7 +114,7 @@ endif; ?>
 <p class="menu_class">beers</p>
 <hr class="left_small">
 
-		<div class="row">
+		
 
 <!-- begin beer menu repeater -->
 <?php
@@ -124,7 +124,7 @@ endif; ?>
 $i = 1;
 
 // open first column
-echo '<div class="col-xs-12 col-sm-6">';
+echo '<div class="row">';
 
 if( have_rows('beer_menu') ):
 
@@ -132,11 +132,11 @@ if( have_rows('beer_menu') ):
     while ( have_rows('beer_menu') ) : the_row(); ?>
 
        <!-- show each repeater item -->
-
+		<div class="col-xs-12 col-sm-6">
         <p class="beer_p"><b><?php the_sub_field('beer'); ?></b></p>  <p class="beer_p"><?php the_sub_field('beer_desc'); ?></p>
-		
+		</div>
 <!-- // if multiple of 3 close div and open a new div -->
-     <?php if($i % 1 == 0) {echo '</div><div class="col-xs-12 col-sm-6">'; }
+     <?php if($i % 2 == 0) {echo '</div><div class="row">'; }
 
      $i++;
 		//make sure open div is closed
@@ -152,7 +152,7 @@ echo '</div>';
 ?>
 <!-- end of beer menu repeater -->
 
-		</div>  <!-- end of row -->
+		
 	</div>	<!-- end of container -->
 </div>  <!-- end of =menu section -->
 

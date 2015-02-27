@@ -465,8 +465,6 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
 
@@ -476,8 +474,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -508,14 +504,10 @@ th {
   padding: 0; }
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 input,
@@ -545,7 +537,6 @@ img {
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -1333,7 +1324,6 @@ hr {
   min-height: 360px;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
   background-color: #FFF;
@@ -1343,10 +1333,6 @@ hr {
 
 .inline {
   display: inline-block; }
-
-.grit {
-  -webkit-mask-image: url("http://support.nature.org/images/earth/assets/grit.png");
-  mask-image: url("http://support.nature.org/images/earth/assets/grit.png"); }
 
 .outlined {
   padding: .3em 1em;
@@ -1388,7 +1374,6 @@ hr {
 #landing {
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
   background-color: #FFF;
@@ -1461,22 +1446,16 @@ hr {
 .fa-facebook:hover {
   color: #3b5998;
   -webkit-transition: all 250ms ease-in;
-  -moz-transition: all 250ms ease-in;
-  -o-transition: all 250ms ease-in;
   transition: all 250ms ease-in; }
 
 .fa-twitter:hover {
   color: #00aced;
   -webkit-transition: all 250ms ease-in;
-  -moz-transition: all 250ms ease-in;
-  -o-transition: all 250ms ease-in;
   transition: all 250ms ease-in; }
 
 .fa-instagram:hover {
   color: #517fa4;
   -webkit-transition: all 250ms ease-in;
-  -moz-transition: all 250ms ease-in;
-  -o-transition: all 250ms ease-in;
   transition: all 250ms ease-in; }
 
 /*blog*/
@@ -1565,9 +1544,6 @@ table {
   background-color: #3399cc;
   color: #fff;
   -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
   transition: all .3s; }
 
 .button_ghost_wide {
@@ -1590,9 +1566,6 @@ table {
   background-color: #3399cc;
   color: #fff;
   -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
   transition: all .3s; }
 
 .button_flat {
@@ -1616,9 +1589,6 @@ table {
   border: 2px solid #274167;
   color: #fff;
   -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
   transition: all .3s; }
 
 .button_raised {
@@ -1644,9 +1614,6 @@ table {
   color: #fff;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
   transition: all .3s; }
 
 input[type="text"],
@@ -1707,6 +1674,8 @@ a {
   padding: 4px; }
 
 .main-navigation {
+  top: -100px;
+  /* hides navigation initially*/
   position: fixed;
   z-index: 999;
   text-decoration: none;
@@ -1714,13 +1683,16 @@ a {
   background-color: rgba(250, 250, 250, 0.9);
   width: 100%;
   box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.4); }
+  -webkit-transition: 333ms all ease-in-out;
+          transition: 333ms all ease-in-out;
+  /* this is transition going from normal to :active; */ }
   .main-navigation .logo_a {
     margin: 0;
     padding: 0; }
     .main-navigation .logo_a:hover {
       background-color: transparent; }
+  .main-navigation.active {
+    top: 0; }
 
 .main-navigation ul {
   list-style: none;
@@ -1756,8 +1728,6 @@ a {
   text-decoration: none;
   background-color: #3399cc;
   -webkit-transition: all 250ms ease-in;
-  -moz-transition: all 250ms ease-in;
-  -o-transition: all 250ms ease-in;
   transition: all 250ms ease-in; }
 
 .main-navigation li ul {
@@ -1784,8 +1754,6 @@ a {
   overflow: hidden;
   height: 0;
   -webkit-transition: height 250ms ease-in;
-  -moz-transition: height 250ms ease-in;
-  -o-transition: height 250ms ease-in;
   transition: height 250ms ease-in; }
 
 .main-navigation ul > li:hover ul li {
@@ -1838,11 +1806,7 @@ a {
   display: block;
   width: 1.125em;
   height: 0.125em;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
   border-radius: 1px;
-  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
 
 .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
@@ -1902,8 +1866,6 @@ a {
   font-family: Muli, sans-serif;
   margin: 5px 5px 6px;
   text-decoration: none;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
   background-color: #3399cc;
   font-weight: 300;
@@ -1911,8 +1873,6 @@ a {
   .slicknav_btn:hover {
     background-color: #274167;
     -webkit-transition: background-color 250ms ease-in;
-    -moz-transition: background-color 250ms ease-in;
-    -o-transition: background-color 250ms ease-in;
     transition: background-color 250ms ease-in; }
 
 /* Button Text */
@@ -1958,15 +1918,11 @@ a {
   background-color: #3399cc;
   color: #FFFFFF;
   -webkit-transition: background-color 250ms ease-in;
-  -moz-transition: background-color 250ms ease-in;
-  -o-transition: background-color 250ms ease-in;
   transition: background-color 250ms ease-in; }
 
 .slicknav_nav a:hover {
   background-color: #274167;
   -webkit-transition: background-color 250ms ease-in;
-  -moz-transition: background-color 250ms ease-in;
-  -o-transition: background-color 250ms ease-in;
   transition: background-color 250ms ease-in; }
 
 .slicknav_nav .slicknav_txtnode {

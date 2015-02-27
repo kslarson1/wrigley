@@ -111,7 +111,7 @@ function wrigley_scripts() {
 	wp_enqueue_style( 'wrigley-style', get_stylesheet_uri() );
 
 	// add custom script
-	wp_enqueue_script( 'wrigley-scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery') );
+	wp_enqueue_script( 'wrigley-scripts', get_template_directory_uri() . '/js/scripts-min.js', array('jquery') );
 
 	wp_enqueue_script( 'wrigley-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

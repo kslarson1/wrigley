@@ -36,10 +36,10 @@
 	   <div class="col-xs-10">
             <ul id="menu">
             	<li><a href="#landing">Home</a></li>
-	            <li><a href="#menu">Menu</a></li>
-	            <li><a href="#about">About</a></li>
+            	<li><a href="#about">About</a></li>
+	            <li><a href="#menu_main">Menu</a></li>
 	            <li><a href="#contact">Contact</a></li>
-	            <li><a href="wrigley/events">Events</a></li>
+	            <li><a href="/events">Events</a></li>
         	</ul>
         </div>
     </div>
