@@ -1339,13 +1339,12 @@ hr {
   font-size: .9em; }
 
 .home_logo {
-  margin: 5em auto 4em auto; }
+  margin: 3em auto 4em auto; }
 
 .image_full {
-  margin-top: 2em;
+  margin-top: 4em;
   box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.4); }
+  border: 8px solid #FFF; }
 
 .small_margin {
   margin: .1em 0; }

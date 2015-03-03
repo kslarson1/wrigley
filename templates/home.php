@@ -79,7 +79,7 @@ get_header(); ?>
 if( have_rows('menu') ):
   // loop through the rows of data
     while ( have_rows('menu') ) : the_row(); ?>
-		<p class="menu_class"><b><?php the_sub_field('menu_header'); ?></b></p>
+		<p class="menu_class"><b><?php the_sub_field('menu_header'); ?></b>
 		<hr class="left_small">
 			<ul class="menu_list">
 	        <!-- START OF SECOND REPEATER FOR LIST -->
@@ -111,7 +111,7 @@ endif; ?>
 
 <br>
 <br>
-<p class="menu_class">beers</p>
+<p class="menu_class">beers</p><p style="font-size: .8em"><?php the_field('beer_update'); ?></p>
 <hr class="left_small">
 
 		
