@@ -8,11 +8,10 @@
     top: -100px;        /* hides navigation initially*/
     position: fixed;
     z-index: 999;
+    margin: 0 auto;
     text-decoration: none;
-    font-family: $font_nav;
-    background-color: $color_header_1;
     width: 100%;
-    box-shadow: 0 0 12px 2px rgba(0, 0, 0, .4);
+    background-color: $color_header_1;
     transition: 333ms all ease-in-out;      /* this is transition going from normal to :active; */
     .logo_a {
         margin: 0;
@@ -28,9 +27,9 @@
 
 .main-navigation ul {
     list-style:none;
-    margin:0;
+    margin:0 auto;
     padding:0;
-    float: right;
+    text-align: center;
 }
 
 .main-navigation ul:before,.main-navigation ul:after {
@@ -43,8 +42,8 @@
 }
 
 .main-navigation ul > li {
-    float:left;
-    position:relative;
+    display: inline-block;
+    position: relative;
     text-align: center;
     min-width: 100px;
 }
@@ -52,17 +51,17 @@
 .main-navigation a {
     height: 70px;   /* this must agree to two classes below*/
     font-size: 18px;
-    display:block;
-    padding: 22px 12px;
+    font-family: $font_nav;
+    padding: 28px 20px 26px 20px;
     line-height:1.2em;
-    color:$logo-2;
+    color:$color_text_1;
     text-decoration: none;
 }
 
 .main-navigation a:hover {
     color: $white;
     text-decoration:none;
-    background-color: $logo-2;
+    background-color: $color_header_2;
     -webkit-transition: all 250ms ease-in;
     -moz-transition: all 250ms ease-in;
     -o-transition: all 250ms ease-in;
@@ -95,9 +94,6 @@
 .main-navigation li ul li {
     overflow:hidden;
     height:0;
-    -webkit-transition:height 250ms ease-in;
-    -moz-transition:height 250ms ease-in;
-    -o-transition:height 250ms ease-in;
     transition:height 250ms ease-in;
 }
 .main-navigation ul > li:hover ul li {
@@ -108,6 +104,11 @@
     margin-top: 70px;   /* make sure this agrees to "main-navigation a" height*/
 }
 
+.logo_a {
+        display: inline-block;
+        max-height: 70px;
+    }
+
 @media screen and (max-width: 700px) {
 
     .main-navigation {
@@ -115,6 +116,10 @@
     }
     .content-area {
         margin-top: 54px;
+    }
+
+    .logo_a {
+        display: none;
     }
 }
 

@@ -257,7 +257,7 @@ select,
 textarea {
   font-family: Merriweather, serif;
   font-weight: 300;
-  font-style: 1em;
+  font-size: 1em;
   font-color: #5e5e5e; }
 
 /*FONT SIZES*/
@@ -1289,7 +1289,7 @@ select,
 textarea {
   font-family: Merriweather, serif;
   font-weight: 300;
-  font-style: 1em;
+  font-size: 1em;
   font-color: #5e5e5e; }
 
 /*FONT SIZES*/
@@ -1677,11 +1677,10 @@ a {
   /* hides navigation initially*/
   position: fixed;
   z-index: 999;
+  margin: 0 auto;
   text-decoration: none;
-  font-family: Special Elite, cursive;
-  background-color: rgba(250, 250, 250, 0.9);
   width: 100%;
-  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.4);
+  background-color: rgba(250, 250, 250, 0.8);
   -webkit-transition: 333ms all ease-in-out;
           transition: 333ms all ease-in-out;
   /* this is transition going from normal to :active; */ }
@@ -1695,9 +1694,9 @@ a {
 
 .main-navigation ul {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  float: right; }
+  text-align: center; }
 
 .main-navigation ul:before, .main-navigation ul:after {
   content: "";
@@ -1707,7 +1706,7 @@ a {
   clear: both; }
 
 .main-navigation ul > li {
-  float: left;
+  display: inline-block;
   position: relative;
   text-align: center;
   min-width: 100px; }
@@ -1716,21 +1715,21 @@ a {
   height: 70px;
   /* this must agree to two classes below*/
   font-size: 18px;
-  display: block;
-  padding: 22px 12px;
+  font-family: Special Elite, cursive;
+  padding: 28px 20px 26px 20px;
   line-height: 1.2em;
-  color: #3399cc;
+  color: #1C1C1C;
   text-decoration: none; }
 
 .main-navigation a:hover {
   color: #FFF;
   text-decoration: none;
-  background-color: #3399cc;
+  background-color: rgba(60, 60, 60, 0.9);
   -webkit-transition: all 250ms ease-in;
   transition: all 250ms ease-in; }
 
 .main-navigation li ul {
-  background-color: rgba(250, 250, 250, 0.9); }
+  background-color: rgba(250, 250, 250, 0.8); }
 
 .main-navigation li ul li {
   width: 220px; }
@@ -1753,7 +1752,7 @@ a {
   overflow: hidden;
   height: 0;
   -webkit-transition: height 250ms ease-in;
-  transition: height 250ms ease-in; }
+          transition: height 250ms ease-in; }
 
 .main-navigation ul > li:hover ul li {
   height: 36px; }
@@ -1762,12 +1761,19 @@ a {
   margin-top: 70px;
   /* make sure this agrees to "main-navigation a" height*/ }
 
+.logo_a {
+  display: inline-block;
+  max-height: 70px; }
+
 @media screen and (max-width: 700px) {
   .main-navigation {
     display: none; }
 
   .content-area {
-    margin-top: 54px; } }
+    margin-top: 54px; }
+
+  .logo_a {
+    display: none; } }
 /*footer*/
 .site-footer {
   background-color: #7e7e7e;
@@ -1857,22 +1863,19 @@ a {
   display: block;
   position: fixed;
   z-index: 999;
-  top: 0;
-  padding: 5px; }
+  top: 0; }
 
 /* Button */
 .slicknav_btn {
   font-family: Muli, sans-serif;
-  margin: 5px 5px 6px;
+  margin: 5px 5px 6px 0;
   text-decoration: none;
   border-radius: 4px;
-  background-color: #3399cc;
-  font-weight: 300;
-  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.5); }
+  font-weight: 300; }
   .slicknav_btn:hover {
-    background-color: #274167;
+    background-color: rgba(60, 60, 60, 0.9);
     -webkit-transition: background-color 250ms ease-in;
-    transition: background-color 250ms ease-in; }
+            transition: background-color 250ms ease-in; }
 
 /* Button Text */
 .slicknav_menu .slicknav_menutxt {
@@ -1897,16 +1900,14 @@ a {
   margin: 0 0 0 20px; }
 
 .slicknav_nav .slicknav_row {
-  padding: 5px 10px;
-  margin: 2px 5px; }
+  padding: 5px 0; }
 
 .slicknav_nav a {
   padding: 5px 10px;
-  margin: 0 5px;
   text-decoration: none;
   text-align: right;
   color: #FFFFFF;
-  background-color: #3399cc; }
+  background-color: rgba(60, 60, 60, 0.9); }
 
 .slicknav_nav .slicknav_item a,
 .slicknav_nav .slicknav_parent-link a {
@@ -1917,12 +1918,12 @@ a {
   background-color: #3399cc;
   color: #FFFFFF;
   -webkit-transition: background-color 250ms ease-in;
-  transition: background-color 250ms ease-in; }
+          transition: background-color 250ms ease-in; }
 
 .slicknav_nav a:hover {
-  background-color: #274167;
+  background-color: #000;
   -webkit-transition: background-color 250ms ease-in;
-  transition: background-color 250ms ease-in; }
+          transition: background-color 250ms ease-in; }
 
 .slicknav_nav .slicknav_txtnode {
   margin-left: 15px; }

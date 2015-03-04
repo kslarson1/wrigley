@@ -30,14 +30,11 @@
 
 <div class="container">
 	<div class="row">
-	   <div class="col-xs-2">
-		  <a class="logo_a" href="/wrigley"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" class="image_logo"></a>
-	   </div>
-	   <div class="col-xs-10">
+	   <div class="col-xs-12">
             <ul id="menu">
-            	<li><a href="#landing">Home</a></li>
             	<li><a href="#about">About</a></li>
 	            <li><a href="#menu_main">Menu</a></li>
+	            <img class="logo_a" src="<?php bloginfo('template_directory'); ?>/images/logo.png" class="image_logo">
 	            <li><a href="#contact">Contact</a></li>
 	            <li><a href="/events">Events</a></li>
         	</ul>

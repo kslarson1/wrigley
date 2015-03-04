@@ -190,7 +190,7 @@ echo '</div>';
 							</a>
 						</span>
 						<span class="fa-stack fa-lg">
-							<a href="https://www.linkedin.com/pub/emily-parsons/1b/870/178" target="_blank">
+							<a href="https://instagram.com/andy_salmons/" target="_blank">
 				  				<i class="fa fa-circle fa-stack-2x"></i>
 				  				<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
 							</a>
