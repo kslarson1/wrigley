@@ -18,7 +18,8 @@ get_header(); ?>
 			<div class="col-xs-12 col-sm-8">
 				<?php get_template_part( 'content', 'single' ); ?>
 
-				<?php the_post_navigation(); ?>
+				<hr>
+				<p class="inline" style="float: left"><?php previous_post_link(); ?></p>    <p class="inline" style="float: right"><?php next_post_link(); ?></p>
 			</div>
 			<div class="col-xs-12 col-xs-4">
 				<?php get_sidebar(); ?>

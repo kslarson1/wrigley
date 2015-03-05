@@ -41,7 +41,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-</div>
+</div>  <!-- end of =about -->
 
 <div class="break" style="background-image: url(<?php the_field('break_bg'); ?>);">
 	<div class="container">
@@ -51,7 +51,7 @@ get_header(); ?>
 	    </div>
 	  </div>
 	</div>
-</div>
+</div>  <!-- end of =break -->
 
 
 <div id="menu_main" style="background-image: url(<?php the_field('menu_bg'); ?>);">
@@ -59,11 +59,12 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-xs-12">
 			<div class="row">
+			<hr class="gray">
 			<div class="col-xs-12 col-sm-2">
-				<h1 class="center ">MENUS</h1>
+					<h1 class="center ">MENUS</h1>	
 			</div>
+			<hr class="gray">
 			<div class="col-xs-12 col-sm-9 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1">
-				<p class="outlined"><?php the_field('menu_intro'); ?></p>
 			</div>
 			</div>
 			<br>
@@ -79,7 +80,7 @@ get_header(); ?>
 if( have_rows('menu') ):
   // loop through the rows of data
     while ( have_rows('menu') ) : the_row(); ?>
-		<p class="menu_class"><b><?php the_sub_field('menu_header'); ?></b>
+		<p class="menu_class"><b><?php the_sub_field('menu_header'); ?></b><p style="font-size: .8em"><?php the_field('menu_update'); ?></p>
 		<hr class="left_small">
 			<ul class="menu_list">
 	        <!-- START OF SECOND REPEATER FOR LIST -->
@@ -154,17 +155,22 @@ echo '</div>';
 
 		
 	</div>	<!-- end of container -->
-</div>  <!-- end of =menu section -->
+</div>  <!-- end of =menu_main section -->
 
+
+<div class="break" style="background-image: url(<?php the_field('break_bg'); ?>);">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 center">
+				<h1><?php the_field('about_intro'); ?></h1>
+			</div>
+		</div>
+	</div>
+</div>
 
 <div id="contact">
 	<div class="contact_top">
 		<div class="container">
-			<div class="row">
-				<div class="main_header">
-					<h2>Come say hi</h2>
-				</div>
-			</div>
 			<div class="row">
 				<div class="col-xs-12 col-sm-5 col-sm-offset-1">
 					<h3 class="center">Location</h3>
@@ -221,9 +227,10 @@ echo '</div>';
 	endif; ?>
 	<!-- end of =hours repeater -->
 
-				</div>	<!-- end of column -->
-			</div>	<!-- end of row -->
-		</div>	<!-- end of container -->
+					</div>	<!-- end of column -->
+				</div>	<!-- end of row -->
+			</div>
+
 	</div>	<!-- end of contact_top -->  
 
 	<div class="map_container">
