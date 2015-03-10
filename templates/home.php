@@ -32,12 +32,17 @@ get_header(); ?>
 <div id="about">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-5">
+			<div class="col-xs-12 col-md-7">
 				<h2 class="center"><?php the_field('about_header'); ?></h2>
+					<div class="center">
+						<i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i>
+					</div>
 				<p><?php the_field('about_text'); ?></p>
+				<a href="/events"><button class="button_raised" style="margin-top: 1em">Events</button></a>
 			</div>
-			<div class="col-xs-12 col-sm-7">
-				<img src="<?php the_field('about_image'); ?>" class="image_full">
+			<div class="col-xs-12 col-md-5">
+				<div class="circle" style="background-image: url(<?php the_field('about_image1'); ?>)">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -60,8 +65,8 @@ get_header(); ?>
 			<div class="col-xs-12">
 			<div class="row">
 			<hr class="gray">
-			<div class="col-xs-12 col-sm-2">
-					<h1 class="center ">MENUS</h1>	
+			<div class="col-xs-12">
+				<h1 class="center">MENUS</h1>	
 			</div>
 			<hr class="gray">
 			<div class="col-xs-12 col-sm-9 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1">
@@ -109,13 +114,11 @@ endif; ?>
 			</div>	<!-- end of col -->
 		</div>	<!-- end of row -->
 
-
 <br>
 <br>
-<p class="menu_class">beers</p><p style="font-size: .8em"><?php the_field('beer_update'); ?></p>
+<p class="menu_class"><b>beers</b></p><p style="font-size: .8em"><?php the_field('beer_update'); ?></p>
 <hr class="left_small">
 
-		
 
 <!-- begin beer menu repeater -->
 <?php
@@ -152,6 +155,66 @@ endif;
 echo '</div>';
 ?>
 <!-- end of beer menu repeater -->
+
+<br>
+<br>
+
+<div class="row">
+	<div class="col-xs-12 col-md-6">
+		<p class="menu_class"><b>bourbon</b></p><p style="font-size: .8em"><?php the_field('bourbon_text'); ?></p>
+		<hr class="left_small">
+			<ul class="menu_list">	
+
+
+<!-- start of bourbon repeater -->
+<?php
+// check if the repeater field has rows of data
+if( have_rows('bourbon_menu') ):
+ 	// loop through the rows of data
+    while ( have_rows('bourbon_menu') ) : the_row(); ?>
+
+		<li>
+        	<p><b><?php the_sub_field('bourbon_name'); ?></b>  <?php the_sub_field('bourbon_desc'); ?></p>
+		</li>
+
+    <?php endwhile;
+else :
+    // no rows found
+endif; ?>
+<!-- end of bourbon repeater -->
+
+
+			</ul>
+	</div> <!-- end of bourbon col -->
+
+	<div class="col-xs-12 col-md-6">
+	<p class="menu_class"><b>wine</b></p><p style="font-size: .8em"><?php the_field('wine_text'); ?></p>
+		<hr class="left_small">
+			<ul class="menu_list">	
+
+	<!-- start of wine repeater -->
+<?php
+
+// check if the repeater field has rows of data
+if( have_rows('wine_menu') ):
+ 	// loop through the rows of data
+    while ( have_rows('wine_menu') ) : the_row(); ?>
+
+		<li>
+        	<p><b><?php the_sub_field('name'); ?></b>  <?php the_sub_field('description'); ?></p>
+		</li>
+
+    <?php endwhile;
+else :
+    // no rows found
+endif; ?>
+	<!-- end of wine repeater -->
+
+
+			</ul>
+	</div> <!-- end of wine col -->
+</div> <!-- end of row -->
+
 
 		
 	</div>	<!-- end of container -->

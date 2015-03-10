@@ -16,6 +16,16 @@ get_header(); ?>
 <div id="events_bg">
 	<div class="container">
 		<div class="row">
+			<div class="col-xs-12">
+				<h1>Event Calendar</h1>
+				<p><?php the_field('events_header'); ?></p>
+				<hr	class="event_line">
+				<br>
+				<br>
+			</div>
+		</div>
+
+		<div class="row">
 				<div class="col-xs-12 col-sm-8">
 					<?php echo do_shortcode('[gcal id="89"]'); ?>  <!-- google calendar -->
 				</div>

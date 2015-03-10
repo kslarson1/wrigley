@@ -1341,12 +1341,26 @@ hr {
 
 .home_logo {
   margin: 3em auto 4em auto;
-  width: 500px; }
+  width: 100%; }
+  @media (min-width: 768px) {
+    .home_logo {
+      min-width: 400px;
+      max-width: 500px; } }
+
+.circle {
+  width: 100%;
+  margin: 2em 0 2em 0;
+  border: 0.5em solid #d3d3d3;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center; }
 
 .image_full {
-  margin-top: 4em;
-  box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.4);
-  border-radius: 1em; }
+  display: block;
+  margin: 3em auto 0 auto;
+  max-height: 400px;
+  border-radius: 50%;
+  border: 0.5em solid #E9E6E0; }
 
 .small_margin {
   margin: .1em 0; }
@@ -1385,6 +1399,8 @@ hr {
   margin-top: -70px;
   padding: 3em 0 5em 0;
   z-index: 1; }
+  #landing a {
+    color: #1C1C1C; }
 
 #menu_main {
   padding: 4em 0 6em 0;
@@ -1421,11 +1437,13 @@ hr {
 
 #about {
   padding: 6em 0;
-  background: #faeec7;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #faeec7), color-stop(100%, whitesmoke));
-  background: -webkit-linear-gradient(left, #faeec7 0%, whitesmoke 100%);
-  background: linear-gradient(to right, #faeec7 0%, whitesmoke 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faeec7', endColorstr='#f5f5f5', GradientType=1 ); }
+  background-color: #FFF;
+  color: #274167; }
+  #about p {
+    color: #274167;
+    padding: 0 2em 0 2em; }
+  #about .fa {
+    margin: 0 1em 0 1em; }
 
 #contact {
   padding: 4em 0 6em 0; }
@@ -1467,18 +1485,26 @@ hr {
   transition: all 250ms ease-in; }
 
 /*calendar*/
-.gce-list-event {
+#events_bg {
+  margin-top: -50px; }
+  #events_bg p {
+    color: #3D6E97; }
+
+.event_line {
   background-color: #3D6E97;
+  width: 100%; }
+
+.gce-list-event {
+  background-color: #274167;
   color: #FFF; }
 
 .gce-today,
 .gce-has-events {
-  background: white;
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(100%, #c5bea2));
-  background: -webkit-radial-gradient(center, ellipse cover, white 0%, #c5bea2 100%);
-  background: -webkit-radial-gradient(center, ellipse, white 0%, #c5bea2 100%);
-  background: radial-gradient(ellipse at center, white 0%, #c5bea2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c5bea2', GradientType=1 ); }
+  background-color: #274167;
+  color: #1C1C1C; }
+  .gce-today .gce-day-number,
+  .gce-has-events .gce-day-number {
+    color: #FFF; }
 
 /*--------------------------------------------------------------
 3.0 Elements
