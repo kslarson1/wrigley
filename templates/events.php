@@ -26,9 +26,9 @@ get_header(); ?>
 		</div>
 
 		<div class="row">
-				<div class="col-xs-12 col-sm-8">
+			<div class="col-xs-12 col-sm-8">
 					<?php echo do_shortcode('[gcal id="89"]'); ?>  <!-- google calendar -->
-				</div>
+			</div>
 			<div class="col-xs-12 col-sm-4">
 				<?php get_sidebar(); ?>
 			</div>
