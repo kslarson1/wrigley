@@ -63,15 +63,15 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-			<div class="row">
-			<hr class="gray">
-			<div class="col-xs-12">
-				<h1 class="center">MENUS</h1>	
-			</div>
-			<hr class="gray">
-			<div class="col-xs-12 col-sm-9 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1">
-			</div>
-			</div>
+				<div class="row">
+				<hr class="gray">
+					<div class="col-xs-12">
+						<h1 class="center">MENUS</h1>	
+					</div>
+				<hr class="gray">
+					<div class="col-xs-12 col-sm-9 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1">
+					</div>
+				</div>
 			<br>
 			</div>
 		</div>
