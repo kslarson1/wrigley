@@ -6,6 +6,7 @@ hr {
 	height: 1px;
 	background-color: $gray-3;
 	width: 90%;
+	margin: .5em auto 1.5em auto;
 }
 
 .gray {
@@ -30,6 +31,17 @@ hr {
 
 .inline {
 	display: inline-block;
+}
+
+.box_out {
+	background-color: #fff;
+	padding: 1em;
+	margin: 0 auto 2em auto;
+}
+.box_thin {
+	border: 1px solid #000;
+	padding: 2em .5em;
+	background-color: #fff;
 }
 
 .home_logo {
@@ -157,7 +169,7 @@ hr {
 
 #about {
 	padding: 6em 0;
-	background-color: $white;
+	background-color: $gray-1;
 	color: $logo-1;
 	& p {
 		color: $logo-1;
@@ -169,21 +181,33 @@ hr {
 }
 
 #contact {
-	padding: 4em 0 6em 0;
+	padding: 0 0 5em 0;
 	p {
 		font-size: .9em;
 	}
 	.reduce_margin {
 		margin: 0 .5em;
 	}
+	.box_out {
+		max-width: 360px;
+		margin: 0 auto 2em auto;
+	}
+	.box_thin {
+		padding: 2em .5em;
+		background-color: #fff;
+		min-height: 400px;
+	}
 }
 
 .contact_top {
-	margin: 0 0 4em 0;
+	padding: 6em 0 4em 0;
+	background-color: #ececec;
+	border-top: 4px solid $logo-2;
 }
 
 .map_container {
 	width: 100%;
+	border-top: 4px solid $logo-2;
 }
 
 /*social media*/

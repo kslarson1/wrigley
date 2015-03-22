@@ -32,15 +32,20 @@ get_header(); ?>
 <div id="about">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-md-7">
+			<div class="col-xs-12 col-md-6">
 				<h2 class="center"><?php the_field('about_header'); ?></h2>
 					<div class="center">
 						<i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i>
 					</div>
-				<p><?php the_field('about_text'); ?></p>
-				<a href="/events"><button class="button_raised" style="margin-top: 1em">Events</button></a>
+				<br>
+				<div class="box_out">
+				<div class="box_thin">
+					<p><?php the_field('about_text'); ?></p>
+					<a href="/events"><button class="button_raised" style="margin-top: 1em">Events</button></a>
+				</div>
+				</div>
 			</div>
-			<div class="col-xs-12 col-md-5">
+			<div class="col-xs-12 col-md-6">
 				<div class="circle" style="background-image: url(<?php the_field('about_image1'); ?>)">
 				</div>
 			</div>
@@ -235,40 +240,55 @@ endif; ?>
 	<div class="contact_top">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-5 col-sm-offset-1">
-					<h3 class="center">Location</h3>
-					<p><?php the_field('about_address_desc'); ?></p>
-					<p class="center"><?php the_field('about_address'); ?></p>
-
-					<hr class="no_small">
-
-					<h3 class="center">Contact Us</h3>
-					<p class="center small_margin"><i class="fa fa-phone reduce_margin"></i><?php the_field('about_phone'); ?></p>
-					<p class="center small_margin"><i class="fa fa-envelope-o reduce_margin"></i><a href="mailto:kslarson1@gmail.com"><?php the_field('about_email'); ?></a></p>
-					<div class="social_container">
-						<span class="fa-stack fa-lg">
-							<a href="https://www.facebook.com/pages/The-Wrigley-Taproom-and-Brewery/577571682341250" target="_blank">
-	  							<i class="fa fa-circle fa-stack-2x"></i>
-	  							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-							</a>
-						</span>
-						<span class="fa-stack fa-lg">
-							<a href="https://twitter.com" target="_blank">
-				  				<i class="fa fa-circle fa-stack-2x"></i>
-				  				<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-							</a>
-						</span>
-						<span class="fa-stack fa-lg">
-							<a href="https://instagram.com/thewrigleytaproom/" target="_blank">
-				  				<i class="fa fa-circle fa-stack-2x"></i>
-				  				<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-							</a>
-						</span>
+				<div class="col-xs-12 col-sm-4">
+					<div class="box_out">
+					<div class="box_thin">
+						<h3 class="center">Location</h3>
+						<hr>
+						<p><?php the_field('about_address_desc'); ?></p>
+						<p class="center"><?php the_field('about_address'); ?></p>
+					</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-5 center">
-					<h3>Hours</h3>
-					<p><i class="fa fa-times"></i><b><?php the_field('hours_intro'); ?></b><i class="fa fa-times"></i></p>
+
+				<div class="col-xs-12 col-sm-4">
+					<div class="box_out">
+					<div class="box_thin">
+						<h3 class="center">Contact Us</h3>
+						<hr>
+						<p class="center small_margin"><i class="fa fa-phone reduce_margin"></i><?php the_field('about_phone'); ?></p>
+						<p class="center small_margin"><i class="fa fa-envelope-o reduce_margin"></i><a href="mailto:kslarson1@gmail.com"><?php the_field('about_email'); ?></a></p>
+						<br>
+						<div class="social_container">
+							<span class="fa-stack fa-lg">
+								<a href="https://www.facebook.com/pages/The-Wrigley-Taproom-and-Brewery/577571682341250" target="_blank">
+		  							<i class="fa fa-circle fa-stack-2x"></i>
+		  							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+								</a>
+							</span>
+							<span class="fa-stack fa-lg">
+								<a href="https://twitter.com" target="_blank">
+					  				<i class="fa fa-circle fa-stack-2x"></i>
+					  				<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+								</a>
+							</span>
+							<span class="fa-stack fa-lg">
+								<a href="https://instagram.com/thewrigleytaproom/" target="_blank">
+					  				<i class="fa fa-circle fa-stack-2x"></i>
+					  				<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+								</a>
+							</span>
+						</div>
+					</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 center">
+					<div class="box_out">
+					<div class="box_thin">
+						<h3>Hours</h3>
+						<hr>
+						<p><i class="fa fa-times"></i><?php the_field('hours_intro'); ?><i class="fa fa-times"></i></p>
 
 	<!-- start of =hours repeater -->
 	<?php
@@ -289,10 +309,11 @@ endif; ?>
 	    // no rows found
 	endif; ?>
 	<!-- end of =hours repeater -->
-
-					</div>	<!-- end of column -->
+					</div>
+					</div>
+						</div>	<!-- end of column -->
 				</div>	<!-- end of row -->
-			</div>
+		</div>
 
 	</div>	<!-- end of contact_top -->  
 
