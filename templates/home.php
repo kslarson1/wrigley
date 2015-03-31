@@ -33,24 +33,28 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
-				<h2 class="center"><?php the_field('about_header'); ?></h2>
-					<div class="center">
-						<i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i>
-					</div>
-				<br>
 				<div class="box_out">
-				<div class="box_thin">
-					<p><?php the_field('about_text'); ?></p>
-					<a href="/events"><button class="button_raised" style="margin-top: 1em">Events</button></a>
-				</div>
+					<div class="box_thin">
+						<h2 class="center"><?php the_field('about_header'); ?></h2>
+						<div class="center">
+							<i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i><i class="fa fa-asterisk"></i>
+						</div>
+						<br>
+						<p><?php the_field('about_text'); ?></p>
+						<a href="/events"><button class="button_raised" style="margin-top: 1em">Events</button></a>
+					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-6">
-				<div class="circle" style="background-image: url(<?php the_field('about_image1'); ?>)">
+				<div class="image_about_container">
+					<img src="<?php the_field('about_image1'); ?>" class="image_rect">
+					<img src="<?php the_field('about_image2'); ?>" class="image_rect">
+					<img src="<?php the_field('about_image3'); ?>" class="image_rect_wide">
 				</div>
 			</div>
 		</div>
 	</div>
+
 </div>  <!-- end of =about -->
 
 <div class="break" style="background-image: url(<?php the_field('break_bg'); ?>);">

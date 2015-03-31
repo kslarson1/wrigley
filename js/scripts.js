@@ -45,11 +45,6 @@ window.onresize = function(event) {
 function resizeDiv() {
     vpw = $(window).width(); // Viewport Width
     vph = $(window).height(); // Viewport Height
-
-    // Your Styles
-    cirW = $('.circle').width();
-
-    $('.circle').css({'height': cirW + 'px'}); // Setting the Height of a class equal to the viewport height divided by 2
 }
 
 
