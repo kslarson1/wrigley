@@ -16,13 +16,12 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 
-<div id="landing" style="background-image: url(<?php the_field('landing_bg'); ?>);">
+<div class="landing" style="background-image: url(<?php the_field('landing_bg'); ?>);">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 center">
 				<img src="<?php the_field('home_logo'); ?>" class="home_logo">
 					<h1><?php the_field('home_header'); ?></h1>
-				<a href="#about"><i class="fa fa-angle-double-down fa-4x"></i></a>
 			</div>
 		</div>
 	</div>
@@ -32,7 +31,7 @@ get_header(); ?>
 <div id="about">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-md-6">
+			<div class="col-xs-12 col-md-8 col-md-offset-2">
 				<div class="box_out">
 					<div class="box_thin">
 						<h2 class="center"><?php the_field('about_header'); ?></h2>
@@ -45,16 +44,16 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-6">
-				<div class="image_about_container">
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="center">
 					<img src="<?php the_field('about_image1'); ?>" class="image_rect">
 					<img src="<?php the_field('about_image2'); ?>" class="image_rect">
-					<img src="<?php the_field('about_image3'); ?>" class="image_rect_wide">
 				</div>
 			</div>
 		</div>
 	</div>
-
 </div>  <!-- end of =about -->
 
 <div class="break" style="background-image: url(<?php the_field('break_bg'); ?>);">
@@ -75,17 +74,15 @@ get_header(); ?>
 				<div class="row">
 				<hr class="gray">
 					<div class="col-xs-12">
-						<h1 class="center">MENUS</h1>	
+						<h1 class="center">MENU</h1>	
 					</div>
 				<hr class="gray">
-					<div class="col-xs-12 col-sm-9 col-sm-offset-1 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1">
-					</div>
 				</div>
 			<br>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 col-sm-12">
+			<div class="col-xs-12 col-md-8">
 
 <!-- START OF FIRST REPEATER -->
 <?php
@@ -125,8 +122,12 @@ endif; ?>
 
 <br>
 <br>
+<div class="row">
+	<div class="col-xs-12">
 <p class="menu_class"><b>beers</b></p><p style="font-size: .8em"><?php the_field('beer_update'); ?></p>
 <hr class="left_small">
+</div>
+</div>
 
 
 <!-- begin beer menu repeater -->

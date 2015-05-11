@@ -48,35 +48,24 @@ hr {
 	margin: 3em auto 4em auto;
 	width: 100%;
 	@media (min-width: 768px) {
-		min-width: 400px;
-		max-width: 500px;
+		min-width: 300px;
+		max-width: 400px;
+		margin: 6em auto 4em auto;
 	}
 }
 
-.image_about_container {
-	display: block;
-	width: 100%;
-	background-color: green;
-	margin: 3em auto 0 auto;
+.image_container {
+	text-align: center;
 }
 
 .image_rect {
-	display: block;
-	float: left;
-	width: 100%;
+	width: 90%;
 	max-width: 450px;
-	margin: 0 auto;
-	padding: .5em;
+	margin: .5em 1em;
+	border: 1em solid $white;
 	@media (min-width: 768px) {
-		width: 50%;
+		width: 45%;
 	}
-}
-
-.image_rect_wide {
-	display: block;
-	float: left;
-	width: 100%;
-	padding: .5em;
 }
 
 .image_full {
@@ -119,27 +108,20 @@ hr {
 	}
 }
 
-#landing {
+.landing {
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
 	background-color: $white;
-	min-height: 700px;
 	margin-top: -70px;	
 	padding: 3em 0 5em 0;
 	z-index: 1;
-	a {
-		color: $color_text_1;
-	}
 	h1 {
-		font-size: 2.5em;
-	}
-	@media (min-width: 768px) {
-		h1 {
-			font-size: 4em;
-		}
+		margin-top: 4em;
+		font-size: 2em;
+		color: $gray-1;
 	}
 }
 
@@ -152,6 +134,8 @@ hr {
 .menu_class {
 	text-transform: uppercase;
 	margin: 1em auto .5em auto;
+	color: $black;
+	font-size: 1.5em;
 }
 
 .left_small {
@@ -194,6 +178,9 @@ hr {
 	}
 	& .fa {
 		margin: 0 1em 0 1em;
+	}
+	.box_out {
+		margin-bottom: 3em;
 	}
 }
 

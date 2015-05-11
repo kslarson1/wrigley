@@ -1,3 +1,20 @@
+// -- Set Dynamic Heights and CSS -- //
+$(document).ready(function(){
+  resizeDiv();
+});
+window.onresize = function(event) {
+  resizeDiv();
+};
+function resizeDiv() {
+  vpw = $(window).width(); // Viewport Width
+  vph = $(window).height(); // Viewport Height
+
+// Your Styles
+// Home page background image height
+$('.landing').css({'height': vph + 'px'});
+}
+
+
 // smooth scroll on same page
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -33,19 +50,5 @@ $(function() {
     sticky_navigation();
  });
 });
-
-
-// -- Set Dynamic Heights and CSS -- //
-$(document).ready(function(){
-    resizeDiv();
-});
-window.onresize = function(event) {
-    resizeDiv();
-};
-function resizeDiv() {
-    vpw = $(window).width(); // Viewport Width
-    vph = $(window).height(); // Viewport Height
-}
-
 
 
