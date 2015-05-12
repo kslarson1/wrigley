@@ -12,6 +12,7 @@
     text-decoration: none;
     width: 100%;
     background-color: $color_header_1;
+    padding: .5em 0;
     transition: 333ms all ease-in-out;      /* this is transition going from normal to :active; */
     .logo_a {
         margin: 0;
@@ -62,6 +63,16 @@
     color: $white;
     text-decoration:none;
     background-color: $color_header_2;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+}
+
+.main-navigation .logo_header a:hover {
+    color: $white;
+    text-decoration:none;
+    background-color: $logo-2;
     -webkit-transition: all 250ms ease-in;
     -moz-transition: all 250ms ease-in;
     -o-transition: all 250ms ease-in;

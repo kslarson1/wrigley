@@ -34,7 +34,7 @@
             <ul id="menu">
             	<li><a href="#about">About</a></li>
 	            <li><a href="#menu_main">Menu</a></li>
-	            <img class="logo_a" src="<?php bloginfo('template_directory'); ?>/images/logo.png" class="image_logo">
+	            <li class="logo_header"><a href="home"><img class="logo_a" src="<?php bloginfo('template_directory'); ?>/images/logo.png" class="image_logo"></a></li>
 	            <li><a href="#contact">Contact</a></li>
 	            <li><a href="/events">Events</a></li>
         	</ul>

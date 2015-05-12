@@ -1340,6 +1340,9 @@ hr {
 .inline {
   display: inline-block; }
 
+.right_pad {
+  padding-right: 1em; }
+
 .box_out {
   background-color: #fff;
   padding: 1em;
@@ -1426,13 +1429,16 @@ hr {
 
 .menu_class {
   text-transform: uppercase;
-  margin: 1em auto .5em auto;
+  margin: .5em auto;
   color: #000;
   font-size: 1.5em; }
 
+.margin_min {
+  margin: 1em auto; }
+
 .left_small {
   background-color: #bdbdbd;
-  margin: 0 auto .5em 0;
+  margin: .5em 0 1em 0;
   width: 200px; }
 
 .menu_list {
@@ -1441,7 +1447,7 @@ hr {
   .menu_list li {
     list-style: none;
     margin: .5em 0;
-    font-size: .8em; }
+    font-size: 1em; }
   .menu_list p {
     margin: 0;
     padding: 0; }
@@ -1450,9 +1456,9 @@ hr {
 
 .beer_p {
   display: inline-block;
-  font-size: .8em;
+  font-size: 1em;
   margin: 0;
-  padding: 0; }
+  padding: 0 1em 0 0; }
 
 #about {
   padding: 6em 0;
@@ -1519,6 +1525,9 @@ hr {
   margin-top: -50px; }
   #events_bg p {
     color: #3D6E97; }
+
+.calender_g {
+  padding: 1em 0 4em 0; }
 
 .event_line {
   background-color: #3D6E97;
@@ -1753,6 +1762,7 @@ a {
   text-decoration: none;
   width: 100%;
   background-color: rgba(250, 250, 250, 0.8);
+  padding: .5em 0;
   -webkit-transition: 333ms all ease-in-out;
           transition: 333ms all ease-in-out;
   /* this is transition going from normal to :active; */ }
@@ -1797,6 +1807,13 @@ a {
   color: #FFF;
   text-decoration: none;
   background-color: rgba(60, 60, 60, 0.9);
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in; }
+
+.main-navigation .logo_header a:hover {
+  color: #FFF;
+  text-decoration: none;
+  background-color: #3D6E97;
   -webkit-transition: all 250ms ease-in;
   transition: all 250ms ease-in; }
 

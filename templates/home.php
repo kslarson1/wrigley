@@ -40,7 +40,7 @@ get_header(); ?>
 						</div>
 						<br>
 						<p><?php the_field('about_text'); ?></p>
-						<a href="/events"><button class="button_raised" style="margin-top: 1em">Events</button></a>
+						<a href="/events"><button class="button_ghost" style="margin-top: 1em">Events</button></a>
 					</div>
 				</div>
 			</div>
@@ -68,21 +68,22 @@ get_header(); ?>
 
 
 <div id="menu_main" style="background-image: url(<?php the_field('menu_bg'); ?>);">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="row">
-				<hr class="gray">
-					<div class="col-xs-12">
-						<h1 class="center">MENU</h1>	
+	<div id="menu_small">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row">
+					<hr class="gray">
+						<div class="col-xs-12">
+							<h1 class="center">MENU</h1>	
+						</div>
+					<hr class="gray">
 					</div>
-				<hr class="gray">
+				<br>
 				</div>
-			<br>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12 col-md-8">
+			<div class="row">
+				<div class="col-xs-12">
 
 <!-- START OF FIRST REPEATER -->
 <?php
@@ -91,7 +92,7 @@ get_header(); ?>
 if( have_rows('menu') ):
   // loop through the rows of data
     while ( have_rows('menu') ) : the_row(); ?>
-		<p class="menu_class"><b><?php the_sub_field('menu_header'); ?></b><p style="font-size: .8em"><?php the_field('menu_update'); ?></p>
+		<p class="menu_class"><b><?php the_sub_field('menu_header'); ?></b><p class="margin_min"><?php the_field('menu_update'); ?></p>
 		<hr class="left_small">
 			<ul class="menu_list">
 	        <!-- START OF SECOND REPEATER FOR LIST -->
@@ -101,7 +102,7 @@ if( have_rows('menu') ):
 	          <!-- // display a sub field value -->
 
 							<li>
-	              				<p><b><?php the_sub_field('item'); ?></b><?php the_sub_field('description'); ?>  <?php the_sub_field('price'); ?></p>
+	              				<p class="right_pad"><b><?php the_sub_field('item'); ?></b><?php the_sub_field('description'); ?>  <?php the_sub_field('price'); ?></p>
 							</li>
 
 	          			<?php endwhile;
@@ -124,7 +125,7 @@ endif; ?>
 <br>
 <div class="row">
 	<div class="col-xs-12">
-<p class="menu_class"><b>beers</b></p><p style="font-size: .8em"><?php the_field('beer_update'); ?></p>
+<p class="menu_class"><b>beer</b></p><p class="margin_min"><?php the_field('beer_update'); ?></p>
 <hr class="left_small">
 </div>
 </div>
@@ -170,64 +171,101 @@ echo '</div>';
 <br>
 
 <div class="row">
-	<div class="col-xs-12 col-md-6">
-		<p class="menu_class"><b>bourbon</b></p><p style="font-size: .8em"><?php the_field('bourbon_text'); ?></p>
+	<div class="col-xs-12">
+		<p class="menu_class"><b>bourbon</b></p><p class="margin_min"><?php the_field('bourbon_text'); ?></p>
 		<hr class="left_small">
-			<ul class="menu_list">	
+	</div> <!-- end of bourbon col -->
+</div>
 
-
-<!-- start of bourbon repeater -->
+<!-- begin bourbon menu repeater -->
 <?php
+
 // check if the repeater field has rows of data
+
+$i = 1;
+
+// open first column
+echo '<div class="row">';
+
 if( have_rows('bourbon_menu') ):
- 	// loop through the rows of data
+
+ 	// <!-- // // loop through the rows of data -->
     while ( have_rows('bourbon_menu') ) : the_row(); ?>
 
-		<li>
-        	<p><b><?php the_sub_field('bourbon_name'); ?></b>  <?php the_sub_field('bourbon_desc'); ?></p>
-		</li>
+       <!-- show each repeater item -->
+		<div class="col-xs-12 col-sm-6">
+        <p class="beer_p"><b><?php the_sub_field('bourbon_name'); ?></b></p>  <p class="beer_p"><?php the_sub_field('bourbon_desc'); ?></p>
+		</div>
+<!-- // if multiple of 3 close div and open a new div -->
+     <?php if($i % 2 == 0) {echo '</div><div class="row">'; }
 
-    <?php endwhile;
+     $i++;
+		//make sure open div is closed
+		
+    endwhile;
+
 else :
+
     // no rows found
-endif; ?>
-<!-- end of bourbon repeater -->
+
+endif;
+echo '</div>';
+?>
+<!-- end of bourbon menu repeater -->
 
 
-			</ul>
-	</div> <!-- end of bourbon col -->
 
-	<div class="col-xs-12 col-md-6">
-	<p class="menu_class"><b>wine</b></p><p style="font-size: .8em"><?php the_field('wine_text'); ?></p>
+
+<div class="row">
+	<div class="col-xs-12">
+	<p class="menu_class"><b>wine</b></p><p class="margin_min"><?php the_field('wine_text'); ?></p>
 		<hr class="left_small">
-			<ul class="menu_list">	
+	</div> <!-- end of bourbon col -->
+</div>
 
-	<!-- start of wine repeater -->
+<!-- begin wine menu repeater -->
 <?php
 
 // check if the repeater field has rows of data
+
+$i = 1;
+
+// open first column
+echo '<div class="row">';
+
 if( have_rows('wine_menu') ):
- 	// loop through the rows of data
+
+ 	// <!-- // // loop through the rows of data -->
     while ( have_rows('wine_menu') ) : the_row(); ?>
 
-		<li>
-        	<p><b><?php the_sub_field('name'); ?></b>  <?php the_sub_field('description'); ?></p>
-		</li>
+       <!-- show each repeater item -->
+		<div class="col-xs-12 col-sm-6">
+        <p class="beer_p"><b><?php the_sub_field('name'); ?></b></p>  <p class="beer_p"><?php the_sub_field('description'); ?></p>
+		</div>
+<!-- // if multiple of 3 close div and open a new div -->
+     <?php if($i % 2 == 0) {echo '</div><div class="row">'; }
 
-    <?php endwhile;
+     $i++;
+		//make sure open div is closed
+		
+    endwhile;
+
 else :
+
     // no rows found
-endif; ?>
-	<!-- end of wine repeater -->
 
+endif;
+echo '</div>';
+?>
+<!-- end of bourbon menu repeater -->
 
-			</ul>
 	</div> <!-- end of wine col -->
 </div> <!-- end of row -->
 
 
 		
 	</div>	<!-- end of container -->
+</div>  <!-- end of =menu_small section -->
 </div>  <!-- end of =menu_main section -->
 
 
