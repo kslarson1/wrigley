@@ -300,7 +300,9 @@ echo '</div>';
 						<h3 class="center">Contact Us</h3>
 						<hr>
 						<p class="center small_margin"><i class="fa fa-phone reduce_margin"></i><?php the_field('about_phone'); ?></p>
-						<p class="center small_margin"><i class="fa fa-envelope-o reduce_margin"></i><a href="mailto:kslarson1@gmail.com"><?php the_field('about_email'); ?></a></p>
+						<p class="center small_margin"><i class="fa fa-envelope-o reduce_margin"></i><a href="mailto:<?php the_field('about_email_1'); ?>"><?php the_field('about_email_1'); ?></a></p>
+						<p class="center small_margin"><i class="fa fa-envelope-o reduce_margin"></i><a href="mailto:<?php the_field('about_email_2'); ?>"><?php the_field('about_email_2'); ?></a></p>
+						<p class="center small_margin"><i class="fa fa-envelope-o reduce_margin"></i><a href="mailto:<?php the_field('about_email_3'); ?>"><?php the_field('about_email_3'); ?></a></p>
 						<br>
 						<div class="social_container">
 							<span class="fa-stack fa-lg">

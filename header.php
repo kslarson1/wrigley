@@ -30,14 +30,30 @@
 
 <div class="container">
 	<div class="row">
-	   <div class="col-xs-12">
+	   <div class="col-xs-12 col-md-8 col-md-offset-2">
             <ul id="menu">
             	<li><a href="#about">About</a></li>
 	            <li><a href="#menu_main">Menu</a></li>
 	            <li class="logo_header"><a href="home"><img class="logo_a" src="<?php bloginfo('template_directory'); ?>/images/logo.png" class="image_logo"></a></li>
 	            <li><a href="#contact">Contact</a></li>
 	            <li><a href="/events">Events</a></li>
-        	</ul>
+			</ul>
+		</div>
+
+			<div class="col-xs-12 col-md-2">
+				<div class="plain_container">
+						<a class="plain" href="https://www.facebook.com/pages/The-Wrigley-Taproom-and-Brewery/577571682341250" target="_blank">
+				  			<i class="fa fa-facebook"></i>
+						</a>
+						<a class="plain" href="https://twitter.com" target="_blank">
+							  <i class="fa fa-twitter"></i>
+						</a>
+						<a class="plain" href="https://instagram.com/thewrigleytaproom/" target="_blank">
+							  <i class="fa fa-instagram"></i>
+						</a>
+				</div>
+			</div>
+
         </div>
     </div>
 </div>

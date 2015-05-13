@@ -1754,25 +1754,13 @@ a {
   padding: 4px; }
 
 .main-navigation {
-  top: -100px;
-  /* hides navigation initially*/
   position: fixed;
   z-index: 999;
   margin: 0 auto;
   text-decoration: none;
   width: 100%;
   background-color: rgba(250, 250, 250, 0.8);
-  padding: .5em 0;
-  -webkit-transition: 333ms all ease-in-out;
-          transition: 333ms all ease-in-out;
-  /* this is transition going from normal to :active; */ }
-  .main-navigation .logo_a {
-    margin: 0;
-    padding: 0; }
-    .main-navigation .logo_a:hover {
-      background-color: transparent; }
-  .main-navigation.active {
-    top: 0; }
+  padding: .5em 0; }
 
 .main-navigation ul {
   list-style: none;
@@ -1863,6 +1851,28 @@ a {
 
   .logo_a {
     display: none; } }
+/*social media icons*/
+.plain_container {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%; }
+  .plain_container .fa {
+    padding: .8em 1em 0 1em; }
+
+@media screen and (min-width: 992px) {
+  .plain_container .fa {
+    width: 30%;
+    padding-top: 1.5em; } }
+.main-navigation .plain {
+  padding: 0;
+  margin: 0; }
+
+.main-navigation .plain:hover {
+  background-color: transparent;
+  color: #1C1C1C; }
+
 /*footer*/
 .site-footer {
   background-color: #7e7e7e;
