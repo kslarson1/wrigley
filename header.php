@@ -45,7 +45,7 @@
 						<a class="plain" href="https://www.facebook.com/pages/The-Wrigley-Taproom-and-Brewery/577571682341250" target="_blank">
 				  			<i class="fa fa-facebook"></i>
 						</a>
-						<a class="plain" href="https://twitter.com" target="_blank">
+						<a class="plain" href="https://twitter.com/the_wrigley" target="_blank">
 							  <i class="fa fa-twitter"></i>
 						</a>
 						<a class="plain" href="https://instagram.com/thewrigleytaproom/" target="_blank">

@@ -53,9 +53,26 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
+
+		<div class="reviews">
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h3 class="center"><?php the_field('review_intro'); ?></h3>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="review_container">
+						<a href="http://www.yelp.com/biz/the-wrigley-taproom-and-brewery-corbin" target="blank"><img src="<?php the_field('yelp_logo'); ?>" class="review_logo"></a>
+						<a href="http://www.tripadvisor.com/Restaurant_Review-g39295-d7674793-Reviews-The_Wrigley_Taproom_and_Brewery-Corbin_Kentucky.html" target="blank"><img src="<?php the_field('trip_logo'); ?>" class="review_logo"></a>
+						<a href="http://www.urbanspoon.com/r/183/1934836/restaurant/Kentucky/The-Wrigley-Taproom-and-Brewery-Corbin" target="blank"><img src="<?php the_field('urban_logo'); ?>" class="review_logo"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </div>  <!-- end of =about -->
 
+<!-- start of break -->
 <div class="break" style="background-image: url(<?php the_field('break_bg'); ?>);">
 	<div class="container">
 	  <div class="row">
@@ -65,7 +82,6 @@ get_header(); ?>
 	  </div>
 	</div>
 </div>  <!-- end of =break -->
-
 
 <div id="menu_main" style="background-image: url(<?php the_field('menu_bg'); ?>);">
 	<div id="menu_small">
@@ -312,7 +328,7 @@ echo '</div>';
 								</a>
 							</span>
 							<span class="fa-stack fa-lg">
-								<a href="https://twitter.com" target="_blank">
+								<a href="https://twitter.com/the_wrigley" target="_blank">
 					  				<i class="fa fa-circle fa-stack-2x"></i>
 					  				<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
 								</a>
@@ -358,9 +374,10 @@ echo '</div>';
 					</div>
 						</div>	<!-- end of column -->
 				</div>	<!-- end of row -->
-		</div>
-
+		</div>  <!-- end of container -->
 	</div>	<!-- end of contact_top -->  
+
+
 
 	<div class="map_container">
 		<?php echo do_shortcode('[wpgmza id="1"]') ; ?>

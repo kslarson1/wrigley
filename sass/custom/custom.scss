@@ -216,6 +216,24 @@ hr {
 	background-color: #ececec;
 }
 
+.reviews {
+	padding: 5em 0 0 0;
+	color: $black;
+}
+
+.review_container {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+.review_logo {
+	display: inline-block;
+	text-align: center;
+	width: 80px;
+	margin: 0 1em;
+}
+
 .map_container {
 	width: 100%;
 	border-top: 4px solid $logo-2;
@@ -258,7 +276,6 @@ hr {
 
 /*calendar*/
 #events_bg {
-	margin-top: -50px;
 	p {
 		color: $logo-2;
 	}

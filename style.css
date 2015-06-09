@@ -1490,6 +1490,21 @@ hr {
   padding: 6em 0 4em 0;
   background-color: #ececec; }
 
+.reviews {
+  padding: 5em 0 0 0;
+  color: #000; }
+
+.review_container {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center; }
+
+.review_logo {
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+  margin: 0 1em; }
+
 .map_container {
   width: 100%;
   border-top: 4px solid #3D6E97; }
@@ -1521,10 +1536,8 @@ hr {
   transition: all 250ms ease-in; }
 
 /*calendar*/
-#events_bg {
-  margin-top: -50px; }
-  #events_bg p {
-    color: #3D6E97; }
+#events_bg p {
+  color: #3D6E97; }
 
 .calender_g {
   padding: 1em 0 4em 0; }
