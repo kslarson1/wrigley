@@ -2,15 +2,15 @@
 .button_ghost {
 	display: block;
 	text-align: center;
-	width: 180px;
-	height: 50px;
+	min-width: 160px;
 	font-weight: 300;
 	margin: .5em auto;
-	padding: 8px;
+	padding: 6px;
 	color: $logo-2;
 	background-color: $color_button_1;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	border: 2px solid $logo-2;
+	text-transform: uppercase;
 }
 
 

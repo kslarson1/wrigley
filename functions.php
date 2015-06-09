@@ -1,5 +1,5 @@
 <?php
-wp_set_password( 'change', kslarson1 );
+
 /**
  * wrigley functions and definitions
  *

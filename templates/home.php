@@ -21,7 +21,6 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-xs-12 center">
 				<img src="<?php the_field('home_logo'); ?>" class="home_logo">
-					<h1><?php the_field('home_header'); ?></h1>
 			</div>
 		</div>
 	</div>
@@ -40,7 +39,7 @@ get_header(); ?>
 						</div>
 						<br>
 						<p><?php the_field('about_text'); ?></p>
-						<a href="/events"><button class="button_ghost" style="margin-top: 1em">Events</button></a>
+						<a href="/events"><button class="button_ghost" style="margin-top: 1em">Meet Us</button></a>
 					</div>
 				</div>
 			</div>
@@ -63,7 +62,7 @@ get_header(); ?>
 					<div class="review_container">
 						<a href="http://www.yelp.com/biz/the-wrigley-taproom-and-brewery-corbin" target="blank"><img src="<?php the_field('yelp_logo'); ?>" class="review_logo"></a>
 						<a href="http://www.tripadvisor.com/Restaurant_Review-g39295-d7674793-Reviews-The_Wrigley_Taproom_and_Brewery-Corbin_Kentucky.html" target="blank"><img src="<?php the_field('trip_logo'); ?>" class="review_logo"></a>
-						<a href="http://www.urbanspoon.com/r/183/1934836/restaurant/Kentucky/The-Wrigley-Taproom-and-Brewery-Corbin" target="blank"><img src="<?php the_field('urban_logo'); ?>" class="review_logo"></a>
+						<a href="https://www.zomato.com/corbin-ky/wrigleys-taproom-brewery-corbin" target="blank"><img src="<?php the_field('urban_logo'); ?>" class="review_logo"></a>
 					</div>
 				</div>
 			</div>

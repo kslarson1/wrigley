@@ -31,7 +31,6 @@ $(function() {
   });
 });
 
-
 // changes class after scrolling amount
 $(function() {
  var sticky_navigation_offset_top = $('#landing').outerHeight();
