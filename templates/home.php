@@ -39,7 +39,7 @@ get_header(); ?>
 						</div>
 						<br>
 						<p><?php the_field('about_text'); ?></p>
-						<a href="/events"><button class="button_ghost" style="margin-top: 1em">Meet Us</button></a>
+						<a href="/about"><button class="button_ghost" style="margin-top: 1em">Meet Us</button></a>
 					</div>
 				</div>
 			</div>
@@ -228,7 +228,8 @@ echo '</div>';
 ?>
 <!-- end of bourbon menu repeater -->
 
-
+<br>
+<br>
 
 
 <div class="row">

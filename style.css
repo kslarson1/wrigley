@@ -1357,11 +1357,12 @@ hr {
   margin: 3em auto 4em auto;
   width: 100%;
   max-width: 400px; }
-@dia (min-width: 768px) {
-  .home_logo {
-    min-width: 300px;
-    max-width: 400px;
-    margin: 6em auto 4em auto; } }
+  @media (min-width: 768px) {
+    .home_logo {
+      min-width: 300px;
+      max-width: 400px;
+      margin: 6em auto 4em auto; } }
+
 .image_container {
   text-align: center; }
 
@@ -1503,7 +1504,10 @@ hr {
   display: inline-block;
   text-align: center;
   width: 80px;
-  margin: 0 1em; }
+  margin: 0 .5em .5em .5em; }
+  @media (min-width: 768px) {
+    .review_logo {
+      margin: 0 1em; } }
 
 .map_container {
   width: 100%;

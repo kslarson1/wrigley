@@ -52,7 +52,7 @@ hr {
 	margin: 3em auto 4em auto;
 	width: 100%;
 	max-width: 400px;
-	@dia (min-width: 768px) {
+	@media (min-width: 768px) {
 		min-width: 300px;
 		max-width: 400px;
 		margin: 6em auto 4em auto;
@@ -232,7 +232,10 @@ hr {
 	display: inline-block;
 	text-align: center;
 	width: 80px;
-	margin: 0 1em;
+	margin: 0 .5em .5em .5em;
+	@media (min-width: 768px) {
+		margin: 0 1em;
+	}
 }
 
 .map_container {
